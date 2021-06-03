@@ -1,0 +1,32 @@
+@import "__variables";
+
+.uk-notification-message {
+    padding: 15px;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 550;
+    text-align: center;
+    &.uk-notification-message-danger {
+        background-color: #ff0000a6;
+        &:hover
+        {
+            background-color: #ff0000;
+        }
+    }
+
+    &.uk-notification-message-success {
+        background-color: #00ff22a6;
+        &:hover
+        {
+        background-color: #00ff22;
+        }
+    }
+
+    &.uk-notification-message-primary {
+        background-color: #bb5616a6;
+        &:hover
+        {
+            background-color: #bb5616;
+        }
+    }
+}

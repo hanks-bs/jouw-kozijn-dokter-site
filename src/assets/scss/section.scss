@@ -1,0 +1,65 @@
+@import "__variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color: #000;
+}
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
+section:not(.topsection) {
+    align-items: center;
+    padding-top: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    background-color: $default-bg-section;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    
+
+}
+
+section {
+    h3 {
+        color: #fff;
+        font-size: 1.5em;
+        margin-bottom: 0;
+        background-color: $body-background-color;
+
+    }
+
+   
+}

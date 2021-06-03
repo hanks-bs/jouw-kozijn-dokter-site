@@ -1,0 +1,59 @@
+section.infobar__b {
+
+    z-index: 1;
+    position: relative;
+    height: 140px;
+    background-color: #1371b8 !important;
+    padding-top: 15px  !important;
+    padding-bottom: 25px !important;
+
+    img {
+        max-height: 100%;
+    }
+
+    div.f_B {
+        position: absolute;
+        bottom: 0;
+        background-color: #000;
+        padding: 15px;
+        color: #fff;
+        transform: translateY(45px);
+        font-weight: 550;
+        font-size: 1.2em;
+        cursor: pointer;
+        
+
+        &:hover
+        {
+            text-decoration: none;
+            
+        }
+    }
+}
+
+section.infobar__a {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    padding: 0 !important;
+    position: relative;
+white-space: nowrap;
+    @media only screen and (max-width: 640px) {
+        font-size: 1.8em;
+
+    }
+    @media only screen and (max-width: 516px) {
+        font-size: 1.5em;
+        white-space: break-spaces;
+        text-align: center;
+
+    }
+
+    text-transform: uppercase;
+    min-height: 60px;
+    background-color: #000 !important;
+    margin: 0 auto;
+}

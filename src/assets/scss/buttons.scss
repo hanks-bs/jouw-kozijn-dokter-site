@@ -1,0 +1,21 @@
+@import "__variables";
+.default-btn
+{
+    background: #fff;
+    color: $default-color;
+    border: 0;
+        padding: 5px;
+        font-weight: 550;
+        font-size: 1.5em;
+        @media screen and (max-width: 844px) {
+            font-size: 1.3em;
+        }
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover, &:focus
+        {
+             background: $default-color;
+                color: #fff;
+        }
+}

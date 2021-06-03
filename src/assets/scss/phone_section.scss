@@ -1,0 +1,42 @@
+@import "__variables";
+
+    section#callPhone {
+       
+
+        &>a {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-weight: 800;
+            font-size: 3.2em;
+            display: flex;
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+
+            &>img {
+                max-height: 50px;
+                margin-right: 15px;
+            }
+
+            @media only screen and (max-width:844px) {
+                font-size: 2.5em;
+                &>img {
+                    max-height: 45px;
+    
+                }
+            }
+            @media only screen and (max-width:345px) {
+                font-size: 1.6em;
+                white-space: nowrap;
+            }
+        }
+
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: #000;
+        margin: 0 auto;
+    }
+
+    

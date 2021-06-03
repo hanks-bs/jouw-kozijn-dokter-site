@@ -1,0 +1,225 @@
+@import "__variables";
+
+section.topsection {
+    overflow: visible;
+    background-color: $body-background-color;
+    min-height: 70vh;
+    @media only screen and (max-width: 1024px) {
+        min-height: 50vh;
+    }
+    display: flex;
+    position: relative;
+
+
+
+
+
+    .logo-box {
+        margin: 40px auto;
+        position: absolute;
+        text-align: center;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        .logo-description {
+            background-color: $default-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.5em;
+            padding: 10px 0;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .content {
+
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 760px) {
+            display: grid;
+        }
+
+        &::before {
+
+            height: 100%;
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            content: '';
+
+            @media only screen and (max-width: 760px) {
+                clip-path: polygon(0 0, 100% 0, 100% 100%);
+            }
+
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%);
+            background-color: #60b1e4c2;
+            position: absolute;
+            z-index: -1;
+
+        }
+
+        &::after {
+
+            height: 100%;
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            content: '';
+
+            @media only screen and (max-width: 760px) {
+                clip-path: polygon(100% 6%, 0% 100%, 100% 100%);
+            }
+
+            clip-path: polygon(100% 6%, 50% 100%, 100% 100%);
+            background-color: #1371b8;
+            position: absolute;
+            z-index: -2;
+
+        }
+
+        .left__sub {
+            position: relative;
+            margin: 0 auto;
+            align-items: center;
+            padding-left: 3em;
+
+            @media only screen and (max-width: 760px) {
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+            @media only screen and (max-width: 1200px) {
+                width: 60%;
+            }
+            @media only screen and (max-width: 550px) {
+                width: 80%;
+            }
+
+
+
+
+        }
+
+        .header-description {
+            color: #fff;
+            position: relative;
+            text-align: right;
+            margin-bottom: 1em;
+            margin-top: 1em;
+
+            @media only screen and (max-width: 760px) {
+                margin-left: auto;
+            }
+
+            div {
+                &.long-desc {
+                    margin-left: auto;
+                    overflow: hidden;
+
+                    h2 {
+                        color: #fff;
+                        display: table;
+                        background-color: #fff;
+                        padding: 0 2em 0 30px;
+                        @media only screen and (max-width: 325px)
+                        {
+                            padding: 0 1.3em 0 30px;
+                        }
+                        background-color: #a8191e;
+                        clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+                        margin-bottom: .5em;
+                        margin-left: auto;
+
+                        @media only screen and (max-width: 900px) {
+                            font-size: $h1-font-size-phone;
+                        }
+
+                        @media only screen and (min-width: 360px) {
+                            white-space: nowrap;
+                        }
+                        @media only screen and (max-width: 480px) {
+                            font-size: .8em;
+                        }
+
+                        font-size: $h1-font-size;
+                    }
+
+                    p {
+                        display: table;
+                        background-color: #fff;
+                        font-size: 1.3em;
+                        color: #000;
+                        padding: 0 2.5em 0 30px;
+                        @media only screen and (max-width: 325px)
+                        {
+                            padding: 0 1.5em 0 30px;
+                        }
+                        margin-bottom: 15px;
+                        margin-left: auto;
+                        margin-bottom: 5px;
+                        margin-top: 0px;
+                        white-space: nowrap;
+                        position: relative;
+
+                        @media only screen and (max-width: 900px) {
+                            font-size: 0.9em;
+                        }
+                        
+
+                        &:after {
+                            content: '●';
+                            position: absolute;
+                            font-size: .8em;
+                            top: 15%;
+                            right: 0;
+                            color:#a8191e;
+                            transform: translateX(-70px);
+                            @media only screen and (max-width: 900px) 
+                            {
+                                transform: translateX(-50px);
+                            }
+                            @media only screen and (max-width: 325px) 
+                            {
+                                transform: translateX(-25px);
+                            }
+                            
+                        }
+                    }
+
+                }
+
+
+            }
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                .short-desc {
+                    font-size: $description-font-size;
+
+                    @media only screen and (max-width: 1000px) {
+                        font-size: $description-font-size-phone;
+                    }
+
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    padding: 15px;
+                    background-color: #16806b;
+                }
+            }
+
+
+            font-size: 2em;
+        }
+    }
+}
