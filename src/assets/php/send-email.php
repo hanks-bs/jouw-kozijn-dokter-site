@@ -6,10 +6,14 @@ require './phpmailer/src/Exception.php';
 require './phpmailer/src/PHPMailer.php';
 require './phpmailer/src/SMTP.php';
 
+//CONFIG
+$smtpUsername = "user@domain.com";
+$smtpPassword = "password";
+
 $user_message = "Complete";
 
-$emailTo = "contactform@hanks.usermd.net";
-$emailToName = "Administrator";
+$emailTo = "user@domain.com";
+$emailToName = "Contactformulier";
 
 $name = $_POST["name"];
 $subject = $_POST['subject'];
@@ -56,16 +60,15 @@ $messageToSend = "<b>Naam:</b> $name <br>"
     ."<b>Vraag of opmerking:</b> $message <br>";
 
 
-$emailFrom = 'contactform@hanks.usermd.net';
+$emailFrom = 'user@domain.com';
 $emailFromName = $name;
 
-$smtpUsername = "contactform@hanks.usermd.net";
-$smtpPassword = "P6D9QMFRq82pLEf";
+
 
 $mail = new PHPMailer;
 $mail->isSMTP(); 
 $mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
-$mail->Host = "mail41.mydevil.net."; // use $mail->Host = gethostbyname('smtp.gmail.com');
+$mail->Host = "HOST ADRESS"; // use $mail->Host = gethostbyname('smtp.gmail.com');
 $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is depracated
 $mail->SMTPAuth = true;

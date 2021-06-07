@@ -2,7 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
-
+## [Released]
+### Prepered to production.
 ## [Unreleased]
 
 ## [1.0.0] - 04-06-2021

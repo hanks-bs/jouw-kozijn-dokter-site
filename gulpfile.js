@@ -94,7 +94,7 @@ gulp.task('clean', function() {
       .pipe(lazyplugins.clean());
   });
 // Static Server + watching scss/html files
-gulp.task('serve', gulp.series('clean','html','styles','images','tscompile','vendorCss', 'vendorScripts','Vendorhtaccess', 'vendorPhp','browser-sync'));
+gulp.task('serve', gulp.series(/*'clean',*/'html','styles','images','tscompile','vendorCss', 'vendorScripts','Vendorhtaccess', 'vendorPhp','browser-sync'));
 
 
 gulp.task('default', gulp.parallel('serve'));
